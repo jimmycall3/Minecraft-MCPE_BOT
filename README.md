@@ -1,26 +1,21 @@
 # 🤖 Minecraft AGI Bot
 
-An autonomous Minecraft companion bot powered by **Google Gemini**, **OpenAI**, or **OpenRouter** APIs. Highly optimized to run 24/7 on **Android via Termux** or on any PC/VPS.
+An autonomous Minecraft companion bot powered by **Google Gemini**, **OpenAI**, or **OpenRouter** APIs. Designed to run smoothly inside **Termux (Android)** and PC.
 
-The bot recognizes you as its **big brother**, reacts dynamically to the environment, runs to your side for protection, and explores the world autonomously.
-
----
-
-## 🌟 Features
-- **⚡ Ultra Lightweight:** Runs purely via Cloud APIs (no heavy local model required).
-- **📱 Termux Optimized:** Uses low RAM and minimal phone CPU.
-- **👦 Brother Dynamic:** Knows your in-game name, speaks to you like a younger sibling, and looks up to you.
-- **🛡️ Survival Reflexes:** Flees or fights back when attacked by hostile mobs.
-- **🧗 Unstick Engine:** Built-in parkour, anti-freeze jump reflexes, and `unstick` chat command.
+The bot recognizes you as its **big brother**, reacts dynamically to the environment, runs to you when hurt, and explores the world autonomously.
 
 ---
 
-## 📲 Complete Step-by-Step Guide for Termux (Android)
+## ⚡ Fast Copy-Paste Setup (All-in-One)
 
-> **Note:** Always install Termux from [F-Droid](https://f-droid.org/en/packages/com.termux/) or GitHub releases. Avoid the outdated Google Play Store version.
+If you just want to get started immediately, run this single block of commands in Termux:
 
-### 1. Update Packages & Keep Termux Awake
-Open Termux and run:
 ```bash
-pkg update && pkg upgrade -y
-termux-wake-lock
+pkg update && pkg upgrade -y && \
+termux-wake-lock && \
+pkg install nodejs-lts git nano -y && \
+git clone https://github.com/YOUR_USERNAME/minecraft-agi-bot.git && \
+cd minecraft-agi-bot && \
+npm install && \
+cp .env.example .env && \
+nano .env
