@@ -14,7 +14,7 @@ If you just want to get started immediately, run this single block of commands i
 pkg update && pkg upgrade -y && \
 termux-wake-lock && \
 pkg install nodejs-lts git nano -y && \
-git clone https://github.com/YOUR_USERNAME/minecraft-agi-bot.git && \
+git clone https://github.com/jimmycall3/Minecraft-MCPE_BOT.git && \
 cd minecraft-agi-bot && \
 npm install && \
 cp .env.example .env && \
