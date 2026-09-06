@@ -6,7 +6,7 @@ const axios = require('axios');
 // ================= CONFIGURATION =================
 const SERVER_HOST = process.env.SERVER_HOST || "minepoint.aternos.me";
 const SERVER_PORT = parseInt(process.env.SERVER_PORT, 10) || 29884;
-const BOT_NAME = process.env.BOT_NAME || "AIBOT";
+const BOT_NAME = process.env.BOT_NAME || "Aibot";
 const OWNER_NAME = process.env.OWNER_NAME || "YourName";
 
 const AI_PROVIDER = (process.env.AI_PROVIDER || "gemini").toLowerCase();
@@ -15,10 +15,10 @@ const CUSTOM_MODEL = process.env.CUSTOM_MODEL || "If you Use All in One Api Key 
 // =================================================
 
 const bot = mineflayer.createBot({
-  host: SERVER_HOST,
-  port: SERVER_PORT,
-  username: BOT_NAME,
-  version: false
+  host: process.env.SERVER_HOST || 'minepoint.aternos.me',
+  port: parseInt(process.env.SERVER_PORT, 10) || 29884,
+  username: process.env.BOT_NAME || 'Aibot',
+  version: '1.21.1' // <-- Hardcode 1.21.1 here
 });
 
 bot.loadPlugin(pathfinder);
