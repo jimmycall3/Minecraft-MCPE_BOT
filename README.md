@@ -10,12 +10,12 @@ The bot recognizes you as its **big brother**, reacts dynamically to the environ
 
 If you just want to get started immediately, run this single block of commands in Termux:
 
-```bash
-pkg update && pkg upgrade -y && \
-termux-wake-lock && \
-pkg install nodejs-lts git nano -y && \
-git clone https://github.com/jimmycall3/Minecraft-MCPE_BOT.git && \
-cd minecraft-agi-bot && \
-npm install && \
-cp .env.example .env && \
+```bash - Do This On Termux - 
+pkg update && pkg upgrade -y 
+termux-wake-lock 
+pkg install nodejs-lts git nano -y 
+git clone https://github.com/jimmycall3/Minecraft-MCPE_BOT.git 
+cd Minecraft-MCPE_BOT 
+npm install 
+cp .env.example .env 
 nano .env
